@@ -10,4 +10,5 @@ import com.BikkadIT.UserManagementApplication.entites.UserAccountEntity;
 @Repository
 public interface UserAccountRepository extends JpaRepository<UserAccountEntity, Serializable> {
 
+	public UserAccountEntity findByEmailAndPassword(String email , String password);
 }
